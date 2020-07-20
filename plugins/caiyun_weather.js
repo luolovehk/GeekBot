@@ -42,7 +42,7 @@ class Plugin extends Bot {
       });
     }
     await this.sendMarkdown(`
-{addr || ''} $天气预报 🌤
+{addr || ''} $🌤天气预报 
 > ${data.result.realtime.skycon}
 
 **降雨提醒：**
