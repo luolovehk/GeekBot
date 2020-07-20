@@ -43,7 +43,7 @@ class Plugin extends Bot {
     }
     await this.sendMarkdown(`
 彩云天气 🌤 ${addr || ''}
-> ${data.result.realtime.temperature}
+> ${data.result.realtime.skycon}
 
 **降雨提醒：**
 > ${data.result.minutely.description.trim()}
