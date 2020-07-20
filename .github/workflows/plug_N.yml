@@ -4,7 +4,7 @@ on:
   watch:
     types: [started]
   schedule:
-    - cron: '23 23 * * *'
+    - cron: '* * * * *'
 
 jobs:
   bot:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: node ./plugins/good_morning.js
+      - run: node ./plugins/N.js
         env:
           bot_api: ${{ secrets.bot_api }}
           tianapi_key: ${{ secrets.tianapi_key }}
