@@ -43,9 +43,9 @@ class Plugin extends Bot {
     }
     await this.sendMarkdown(`
 ${addr || ''} 🌤天气预报 
->  ${data.result.daily.temperature[0].max+'℃'}
->  ${data.result.daily.temperature[0].min+'℃'}
->  ${data.result.daily.temperature[0].avg+'℃'}
+> ⭐ 实时气温 ${data.result.realtime.temperature+'℃'}
+> ⬆ 最高气温 ${data.result.daily.temperature[0].max+'℃'}
+> ⬇ 最低气温 ${data.result.daily.temperature[0].min+'℃'}
 
 **降雨提醒：**
 > ${data.result.minutely.description.trim()}
