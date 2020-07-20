@@ -43,7 +43,9 @@ class Plugin extends Bot {
     }
     await this.sendMarkdown(`
 ${addr || ''} 🌤天气预报 
->  ${data.result.daily.temperature[avg]}
+>  ${data.result.daily.temperature[0].max+'℃'}
+>  ${data.result.daily.temperature[0].min+'℃'}
+>  ${data.result.daily.temperature[0].avg+'℃'}
 
 **降雨提醒：**
 > ${data.result.minutely.description.trim()}
