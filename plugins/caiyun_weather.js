@@ -43,7 +43,7 @@ class Plugin extends Bot {
     }
     await this.sendMarkdown(`
 ${addr || ''} 🌤天气预报 
-> ${data.result.hourly.description}
+> ${data.result.hourly.forecast_keypoint}
 
 **降雨提醒：**
 > ${data.result.minutely.description.trim()}
