@@ -42,14 +42,13 @@ class Plugin extends Bot {
       });
     }
     await this.sendMarkdown(`
-彩云天气 🌤 <font color="info">${addr || ''}</font>
+彩云天气 🌤 ${addr || ''}
 
 **降雨提醒：**
-> <font color="warning">${data.result.minutely.description.trim()}</font>
+> ${data.result.minutely.description.trim()}
 
 **天气预报：**
-> <font color="info">${data.result.hourly.description.trim()}</font>
-
+> ${data.result.hourly.description.trim()}
 ${alert_md}`);
   }
 }
