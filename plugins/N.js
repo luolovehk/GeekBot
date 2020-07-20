@@ -16,7 +16,7 @@ class Plugin extends Bot {
 
   run () {
     axios.get(this.API + '?key=' + this.API_KEY).then(res => {
-      const c = (`> 🌺名人名言|学以致用🌺 <\n\n${res.data.newslist[0].content}\n$----${res.data.newslist[0].mrname}`);
+      const c = (`> 🌺名人名言|学以致用🌺 <\n\n${res.data.newslist[0].content}\n——${res.data.newslist[0].mrname}`);
       this.sendText(c);
     });
   }
