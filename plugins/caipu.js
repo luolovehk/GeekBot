@@ -15,7 +15,7 @@ class Plugin extends Bot {
 
   run () {
     axios.get(this.API + '?key=' + this.API_KEY).then(res => {
-      const c = (`> 🥕每日菜谱🌽 <\n\n${res.data.newslist[0].type_name}\n\n${res.data.newslist[0].cp_name}\n\n${res.data.newslist[0].zuofa}\n\n${res.data.newslist[0].texing}\n\n${res.data.newslist[0].tiaoliao}\n\n${res.data.newslist[0].yuanliao}`);
+      const c = (`> 🌛每日菜谱🌛 <\n\n$【菜名】${res.data.newslist[0].cp_name}\nn【做法】${res.data.newslist[0].zuofa}\n\n【调料】${res.data.newslist[0].tiaoliao}\n\n【原料】${res.data.newslist[0].yuanliao}`);
       this.sendText(c);
     });
   }
