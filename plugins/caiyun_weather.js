@@ -36,7 +36,7 @@ class Plugin extends Bot {
     // 预警信息
     let alert_md = '';
     if (data.result.alert.content.length > 0) {
-      alert_md += '天气预警 ⚠\n';
+      alert_md += '⚠ 天气预警 ⚠\n';
       data.result.alert.content.map(a => {
         alert_md += `**${a.title}**\n> ${a.description}\n\n`;
       });
