@@ -38,7 +38,7 @@ class Plugin extends Bot {
     if (data.result.alert.content.length > 0) {
       alert_md += '天气预警 ⚠\n';
       data.result.alert.content.map(a => {
-        alert_md += `**${a.title}**\n> <font color="comment">${a.description}</font>\n\n`;
+        alert_md += `**${a.title}**\n${a.description}\n\n`;
       });
     }
     await this.sendMarkdown(`
