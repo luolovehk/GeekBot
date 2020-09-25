@@ -51,7 +51,7 @@ ${addr || ''} 🌤 天气预报
 > ${data.result.minutely.description.trim()}
 
 **天气预报：**
-> ${data.result.hourly.forecast_keypoint.trim()}
+> ${data.result.hourly.forecast_keypoint}
 
 
 
