@@ -48,7 +48,6 @@ ${addr || ''} 🌤 天气预报
 > ⬇ 最低气温 ${data.result.daily.temperature[0].min+'℃'}
 
 **降雨提醒：**
-> ${data.result.minutely.description.trim()}
 > ${data.result.minutely.probability.trim()}
 
 **天气预报：**
