@@ -52,8 +52,7 @@ ${addr || ''} 🌤 天气预报
 
 **天气预报：**
 > ${data.result.hourly.description.trim()}
-> ${data.result.hourly.forecast_keypoint.trim()}
-> ${data.result.realtime.skycon}
+> ${data.result.hourly.forecast_keypoint}
 
 
 ${alert_md}`);
